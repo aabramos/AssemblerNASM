@@ -40,4 +40,4 @@ Por um parâmetro inteiro recebido de um programa em C, a rotina verifica se ess
 
 Na rotina "provbissexto" o parâmetro ano, é é novamente passado pro registrador eax, o resto edx é zerado, e o divisor ecx recebe um novo valor: 100. Caso o resto seja diferente de zero o fluxo é alterado para a rotina "nbissexto", caso contrário, o registrador recebe uma última vez o parâmetro ano, o resto é zerado e o divisor ecx recebe agora 400. Comparando o resto dessa divisão caso for igual a 0, o fluxo é desviado para a rotina "ehbissexto", onde o registrador eax recebe o valor 1 para retorno, caso seja diferente o fluxo é desviado para a rotina "nbissexto", onde o registrador eax recebe 0 para retorno ao programa chamador. Após eax receber 0, ou 1 dependendo de qual label o fluxo foi desviado, ao final de cada label, o fluxo vai para label final, aonde termina os procedimentos necessários e retornar o valor de eax entre 0 ou 1 para o programa chamador.    
 
-Download
+Confira mais em https://teacherivy.com/suporte/dev-blog
